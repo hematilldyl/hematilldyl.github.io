@@ -1,20 +1,20 @@
 	//game parameters
-		const PADDLE_WIDTH = 100;
-		const PADDLE_HEIGHT = 20;
-		const BRICKS_WIDTH = 60;
-		const BRICKS_HEIGHT = 30;
-		const BALL_RADIUS = 8;
-		const FULL_X_SPEED = 7;
-		var stage;
-		var paddle;
-		var ball;
-		var bricks = [];
-		var score = 0;
-		var lives = 3;
-		var level = 1;
-		var scoreText;
-		var gameStarted = false;
-		const KEYCODE_LEFT = 37;
+	const PADDLE_WIDTH = 100;
+	const PADDLE_HEIGHT = 20;
+	const BRICKS_WIDTH = 60;
+	const BRICKS_HEIGHT = 30;
+	const BALL_RADIUS = 8;
+	const FULL_X_SPEED = 7;
+	var stage;
+	var paddle;
+	var ball;
+	var bricks = [];
+	var score = 0;
+	var lives = 3;
+	var level = 1;
+	var scoreText;
+	var gameStarted = false;
+	const KEYCODE_LEFT = 37;
    	const KEYCODE_RIGHT = 39
    	const SPACEBAR = 32;
    	var keyboardMoveLeft = false;
@@ -142,6 +142,7 @@
 					localStorage.highScore = score;
 				}
 				lives = 3;
+				level = 1;
 				score = 0;
 				createBrickGrid();
 			}
